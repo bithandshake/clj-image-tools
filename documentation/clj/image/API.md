@@ -1,10 +1,7 @@
 
 # <strong>image.api</strong> namespace
-<p>Documentation of the <strong>image/api.clj</strong> file</p>
 
-<strong>[README](../../../README.md) > [DOCUMENTATION](../../COVER.md) > image.api</strong>
-
-
+<strong>[README](../../../README.md) > [DOCUMENTATION](../../COVER.md) > </strong>source-code/clj/image/api.clj
 
 ### generate-thumbnail!
 
@@ -46,10 +43,10 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [image.api :as image :refer [generate-thumbnail!]]))
+(ns my-namespace (:require [image.api :refer [generate-thumbnail!]]))
 
-(image/generate-thumbnail! ...)
-(generate-thumbnail!       ...)
+(image.api/generate-thumbnail! ...)
+(generate-thumbnail!           ...)
 ```
 
 </details>
