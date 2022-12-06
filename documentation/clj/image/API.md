@@ -35,6 +35,7 @@
         [output-width output-height] (helpers/image-dimensions output)
         temporary (new BufferedImage output-width output-height type-int)
         graphics  (.getGraphics temporary)]
+       (io/create-path!      output-path)
        (.drawImage graphics output 0 0 nil)
        (.dispose   graphics)
        (save-thumbnail! temporary output-path {:quality 1.0})
