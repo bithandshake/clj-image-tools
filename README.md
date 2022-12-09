@@ -1,8 +1,6 @@
 
 # image-api
 
-...
-
 ### Overview
 
 The <strong>image-api</strong> is a set of Clojure image handler functions
