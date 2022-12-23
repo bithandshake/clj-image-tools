@@ -18,7 +18,7 @@
 
 ```
 @usage
-(generate-thumbnail! "my-file.png" "my-thumbnail.png" {:max-size 512})
+(generate-thumbnail! "my-image.png" "my-thumbnail.png" {:max-size 512})
 ```
 
 <details>

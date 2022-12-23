@@ -20,7 +20,7 @@
   ; @param (java.awt.image.BufferedImage object) input
   ; @param (string) output-path
   ; @param (map) options
-  ;  {:quality (number)}
+  ; {:quality (number)}
   [input output-path {:keys [quality]}]
   (let [jpeg-params   (new JPEGImageWriteParam nil)
         extension     (io/filepath->extension output-path)
@@ -39,7 +39,7 @@
   ; {:max-size (px)}
   ;
   ; @usage
-  ; (generate-thumbnail! "my-file.png" "my-thumbnail.png" {:max-size 512})
+  ; (generate-thumbnail! "my-image.png" "my-thumbnail.png" {:max-size 512})
   [input-path output-path {:keys [max-size] :as options}]
   (let [input       (-> input-path clojure.java.io/file ImageIO/read)
         input-width (-> input .getWidth)

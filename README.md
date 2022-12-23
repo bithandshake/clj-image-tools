@@ -24,3 +24,20 @@ The <strong>image-api</strong> functional documentation is [available here](docu
 ### Changelog
 
 You can track the changes of the <strong>image-api</strong> library [here](CHANGES.md).
+
+### Index
+
+- [How to generate a thumbnail for an image?](#how-to-generate-a-thumbnail-for-an-image)
+
+# Usage
+
+### How to generate a thumbnail for an image?
+
+The [`image.api/generate-thumbnail!`](documentation/clj/image/API.md/#generate-thumbnail)
+function generates a thumbnail for an image.
+
+- If the output directory doesn't exist, the function will create it.
+
+```
+(generate-thumbnail! "my-image.png" "my-thumbnail.png" {:max-size 512})
+```
