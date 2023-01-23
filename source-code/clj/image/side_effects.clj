@@ -7,9 +7,9 @@
               [javax.imageio              ImageWriteParam]
               [javax.imageio.plugins.jpeg JPEGImageWriteParam]
               [javax.imageio.stream       FileImageOutputStream])
-    (:require [candy.api     :refer [return]]
-              [io.api        :as io]
-              [image.helpers :as helpers]))
+    (:require [io.api        :as io]
+              [image.helpers :as helpers]
+              [noop.api      :refer [return]]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------

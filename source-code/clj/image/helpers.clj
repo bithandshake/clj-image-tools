@@ -9,7 +9,7 @@
               [java.awt AlphaComposite]
               [java.awt Image]
               [java.io  File])
-    (:require [candy.api :refer [return]]))
+    (:require [noop.api :refer [return]]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
