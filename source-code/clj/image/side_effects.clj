@@ -7,15 +7,15 @@
               [javax.imageio              ImageWriteParam]
               [javax.imageio.plugins.jpeg JPEGImageWriteParam]
               [javax.imageio.stream       FileImageOutputStream])
-    (:require [io.api        :as io]
-              [image.helpers :as helpers]
-              [noop.api      :refer [return]]))
+    (:require [io.api      :as io]
+              [image.utils :as utils]
+              [noop.api    :refer [return]]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
 (defn save-thumbnail!
-  ; WARNING! NON-PUBLIC! DO NOT USE!
+  ; @ignore
   ;
   ; @param (java.awt.image.BufferedImage object) input
   ; @param (string) output-path
@@ -45,8 +45,8 @@
         input-width (-> input .getWidth)
         mime-type   (io/filepath->mime-type input-path)
         type-int    (case mime-type "image/png" BufferedImage/TYPE_INT_ARGB BufferedImage/TYPE_INT_RGB)
-        output      (helpers/resize-image input {:max-height max-size :max-width max-size :type-int type-int})
-        [output-width output-height] (helpers/image-dimensions output)
+        output      (utils/resize-image input {:max-height max-size :max-width max-size :type-int type-int})
+        [output-width output-height] (utils/image-dimensions output)
         temporary (new BufferedImage output-width output-height type-int)
         graphics  (.getGraphics temporary)]
        (io/create-path! output-path)

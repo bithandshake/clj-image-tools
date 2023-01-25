@@ -1,5 +1,5 @@
 
-(ns image.helpers
+(ns image.utils
     (:import  [javax.imageio ImageIO]
               [javax.imageio.plugins.jpeg JPEGImageWriteParam]
               [javax.imageio.stream FileImageOutputStream]
