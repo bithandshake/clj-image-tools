@@ -3,8 +3,8 @@
 
 ### Overview
 
-The <strong>clj-image</strong> is a set of Clojure image handler functions
-(e.g. thumbnail-generator, ...)
+The <strong>clj-image</strong> is a set of Clojure image tools such as thumbnail
+generator, etc.
 
 ### deps.edn
 
