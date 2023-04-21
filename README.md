@@ -25,11 +25,11 @@ The <strong>clj-image-tools</strong> functional documentation is [available here
 
 You can track the changes of the <strong>clj-image-tools</strong> library [here](CHANGES.md).
 
+# Usage
+
 ### Index
 
 - [How to generate a thumbnail for an image?](#how-to-generate-a-thumbnail-for-an-image)
-
-# Usage
 
 ### How to generate a thumbnail for an image?
 
