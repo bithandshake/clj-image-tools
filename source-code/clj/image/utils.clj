@@ -8,8 +8,7 @@
               [java.awt.image BufferedImage]
               [java.awt AlphaComposite]
               [java.awt Image]
-              [java.io  File])
-    (:require [noop.api :refer [return]]))
+              [java.io  File]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
@@ -65,4 +64,4 @@
         temporary (.getScaledInstance input output-width output-height Image/SCALE_SMOOTH)]
        (.drawImage graphics temporary 0 0 nil)
        (.dispose   graphics)
-       (return     output)))
+       (->         output)))

@@ -8,8 +8,7 @@
               [javax.imageio.plugins.jpeg JPEGImageWriteParam]
               [javax.imageio.stream       FileImageOutputStream])
     (:require [io.api      :as io]
-              [image.utils :as utils]
-              [noop.api    :refer [return]]))
+              [image.utils :as utils]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
