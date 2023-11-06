@@ -1,11 +1,17 @@
 
-# image.api Clojure namespace
+### image.api
+
+Functional documentation of the image.api Clojure namespace
+
+---
 
 ##### [README](../../../README.md) > [DOCUMENTATION](../../COVER.md) > image.api
 
 ### Index
 
 - [generate-thumbnail!](#generate-thumbnail)
+
+---
 
 ### generate-thumbnail!
 
@@ -58,5 +64,5 @@
 
 ---
 
-This documentation is generated with the [clj-docs-generator](https://github.com/bithandshake/clj-docs-generator) engine.
+<sub>This documentation is generated with the [clj-docs-generator](https://github.com/bithandshake/clj-docs-generator) engine.</sub>
 

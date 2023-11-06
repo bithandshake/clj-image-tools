@@ -1,7 +1,11 @@
 
-# clj-image-tools documentation
+### clj-image-tools
 
-Documentation of the [clj-image-tools](https://github.com/bithandshake/clj-image-tools) Clojure library
+Functional documentation of the [clj-image-tools](https://github.com/bithandshake/clj-image-tools) Clojure library
+
+---
+
+
 
 ##### [README](../README.md) > DOCUMENTATION
 
@@ -11,5 +15,5 @@ Documentation of the [clj-image-tools](https://github.com/bithandshake/clj-image
 
 ---
 
-This documentation is generated with the [clj-docs-generator](https://github.com/bithandshake/clj-docs-generator) engine.
+<sub>This documentation is generated with the [clj-docs-generator](https://github.com/bithandshake/clj-docs-generator) engine.</sub>
 
