@@ -3,8 +3,7 @@
 
 ### Overview
 
-The <strong>clj-image-tools</strong> is a set of image tools for Clojure projects such
-as thumbnail generator, etc.
+The <strong>clj-image-tools</strong> is a set of image file manipulating tools for Clojure projects.
 
 ### deps.edn
 
@@ -26,6 +25,9 @@ The <strong>clj-image-tools</strong> functional documentation is [available here
 You can track the changes of the <strong>clj-image-tools</strong> library [here](CHANGES.md).
 
 # Usage
+
+> Some parameters of the following functions and some further functions are not discussed in this file.
+  To learn more about the available functionality, check out the [functional documentation](documentation/COVER.md)!
 
 ### Index
 
