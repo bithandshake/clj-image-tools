@@ -1,12 +1,12 @@
 
 (ns image-tools.utils
-    (:import [java.awt Image]
-             [java.awt AlphaComposite]
+    (:import [java.awt AlphaComposite]
+             [java.awt Image]
              [java.awt.image BufferedImage]
              [java.io File]
-             [javax.imageio ImageWriteParam]
-             [javax.imageio IIOImage]
              [javax.imageio ImageIO]
+             [javax.imageio IIOImage]
+             [javax.imageio ImageWriteParam]
              [javax.imageio.plugins.jpeg JPEGImageWriteParam]
              [javax.imageio.stream FileImageOutputStream]))
 
