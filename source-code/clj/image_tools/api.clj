@@ -1,9 +1,9 @@
 
-(ns image.api
-    (:require [image.side-effects :as side-effects]))
+(ns image-tools.api
+    (:require [image-tools.side-effects :as side-effects]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
-; image.side-effects
+; image-tools.side-effects
 (def generate-thumbnail! side-effects/generate-thumbnail!)

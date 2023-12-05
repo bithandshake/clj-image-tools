@@ -1,14 +1,14 @@
 
-(ns image.side-effects
-    (:import  [java.io                    File]
-              [java.awt.image             BufferedImage]
-              [javax.imageio              IIOImage]
-              [javax.imageio              ImageIO]
-              [javax.imageio              ImageWriteParam]
-              [javax.imageio.plugins.jpeg JPEGImageWriteParam]
-              [javax.imageio.stream       FileImageOutputStream])
-    (:require [io.api      :as io]
-              [image.utils :as utils]))
+(ns image-tools.side-effects
+    (:import [java.awt.image BufferedImage]
+             [java.io File]
+             [javax.imageio ImageWriteParam]
+             [javax.imageio ImageIO]
+             [javax.imageio IIOImage]
+             [javax.imageio.plugins.jpeg JPEGImageWriteParam]
+             [javax.imageio.stream FileImageOutputStream])
+    (:require [image-tools.utils :as utils]
+              [io.api            :as io]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
