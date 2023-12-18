@@ -9,7 +9,7 @@ The <strong>clj-image-tools</strong> is a set of image file manipulating tools f
 
 ```
 {:deps {bithandshake/clj-image-tools {:git/url "https://github.com/bithandshake/clj-image-tools"
-                                      :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}}
+                                      :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}}}
 ```
 
 ### Current version
