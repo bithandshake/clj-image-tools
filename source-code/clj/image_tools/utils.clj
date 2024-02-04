@@ -14,7 +14,14 @@
 ;; ----------------------------------------------------------------------------
 
 (defn image-dimensions
+  ; @ignore
+  ;
   ; @param (java.awt.image.BufferedImage object) image
+  ;
+  ; @usage
+  ; (image-dimensions ...)
+  ; =>
+  ; [1024 768]
   ;
   ; @return (integers in vector)
   ; [(integer) width
@@ -24,15 +31,17 @@
    (-> image .getHeight)])
 
 (defn scale-dimensions
-  ; @param (integers in vector) size
-  ; @param (integers in vector) max-size
+  ; @ignore
   ;
-  ; @example
+  ; @param (integers in vector) image-dimensions
+  ; @param (integers in vector) scaled-dimensions
+  ;
+  ; @usage
   ; (scale-dimensions [1200 600] [400 150])
   ; =>
   ; [300 150]
   ;
-  ; @example
+  ; @usage
   ; (scale-dimensions [400 150] [1200 600])
   ; =>
   ; [1200 450]
@@ -40,15 +49,17 @@
   ; @return (integers in vector)
   ; [(integer) width
   ;  (integer) height]
-  [[width height] [max-width max-height]]
-  (let [ratio (max (/ width  max-width)
-                   (/ height max-height))]
-       [(/ width ratio) (/ height ratio)]))
+  [[image-width image-height] [scaled-width scaled-height]]
+  (let [ratio (max (/ image-width  scaled-width)
+                   (/ image-height scaled-height))]
+       [(/ image-width ratio) (/ image-height ratio)]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
 (defn resize-image
+  ; @ignore
+  ;
   ; @param (java.awt.image.BufferedImage object) input
   ; @param (map) options
   ; {:max-height (px)

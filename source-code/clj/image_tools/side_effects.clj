@@ -16,6 +16,12 @@
 (defn save-thumbnail!
   ; @ignore
   ;
+  ; @description
+  ; Saves the given image object as image to the given output filepath.
+  ;
+  ; @usage
+  ; (save-thumbnail ... "my-thumbnail.png" {...})
+  ;
   ; @param (java.awt.image.BufferedImage object) input
   ; @param (string) output-path
   ; @param (map) options
@@ -31,7 +37,14 @@
        (.setOutput writer output-stream)
        (.write     writer nil (new IIOImage input nil nil) jpeg-params)))
 
+;; ----------------------------------------------------------------------------
+;; ----------------------------------------------------------------------------
+
 (defn generate-thumbnail!
+  ; @description
+  ; Reads the image from the given input filepath, resizes the read image and writes
+  ; the output on the give output filepath.
+  ;
   ; @param (string) input-path
   ; @param (string) output-path
   ; @param (map) options

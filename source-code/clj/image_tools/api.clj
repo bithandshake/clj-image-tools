@@ -5,5 +5,5 @@
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
-; @redirect (image-tools.side-effects)
+; @redirect (image-tools.side-effects/*)
 (def generate-thumbnail! side-effects/generate-thumbnail!)
