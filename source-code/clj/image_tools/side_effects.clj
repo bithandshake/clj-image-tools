@@ -42,8 +42,7 @@
 
 (defn generate-thumbnail!
   ; @description
-  ; Reads the image from the given input filepath, resizes the read image and writes
-  ; the output on the give output filepath.
+  ; Reads the image from the given input filepath, resizes the read image and writes the output on the given output filepath.
   ;
   ; @param (string) input-path
   ; @param (string) output-path
