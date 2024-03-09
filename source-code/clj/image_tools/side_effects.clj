@@ -2,9 +2,9 @@
 (ns image-tools.side-effects
     (:import [java.awt.image BufferedImage]
              [java.io File]
-             [javax.imageio IIOImage]
-             [javax.imageio ImageIO]
              [javax.imageio ImageWriteParam]
+             [javax.imageio ImageIO]
+             [javax.imageio IIOImage]
              [javax.imageio.plugins.jpeg JPEGImageWriteParam]
              [javax.imageio.stream FileImageOutputStream])
     (:require [image-tools.utils :as utils]
