@@ -16,10 +16,10 @@ The <strong>clj-image-tools</strong> is a set of image file manipulating tools f
 
 Check out the latest commit on the [release branch](https://github.com/mt-server-kit/clj-image-tools/tree/release).
 
-### Documentation
-
-The <strong>clj-image-tools</strong> functional documentation is [available here](https://mt-server-kit.github.io/clj-image-tools).
-
 ### Changelog
 
 You can track the changes of the <strong>clj-image-tools</strong> library [here](CHANGES.md).
+
+# Documentation
+
+The <strong>clj-image-tools</strong> functional documentation is [available here](https://mt-server-kit.github.io/clj-image-tools).
