@@ -14,14 +14,12 @@
 ;; ----------------------------------------------------------------------------
 
 (defn image-dimensions
-  ; @ignore
-  ;
   ; @param (java.awt.image.BufferedImage object) image
   ;
   ; @usage
-  ; (image-dimensions ...)
+  ; (image-dimensions #object[java.awt.image.BufferedImage])
   ; =>
-  ; [1024 768]
+  ; [1200 600]
   ;
   ; @return (integers in vector)
   ; [(integer) width
@@ -31,8 +29,6 @@
    (-> image .getHeight)])
 
 (defn scale-dimensions
-  ; @ignore
-  ;
   ; @param (integers in vector) image-dimensions
   ; @param (integers in vector) scaled-dimensions
   ;
